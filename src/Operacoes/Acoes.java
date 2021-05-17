@@ -24,6 +24,10 @@ public class Acoes {
         this.setResultado(Math.sqrt(n1));
         return this.getResultado();
     }
+    public int radic(int n1, int exp){
+        this.setResultado(Math.pow(n1, exp));
+        return this.getResultado();
+    }
 
     public int getResultado() {
         return (int) resultado;
