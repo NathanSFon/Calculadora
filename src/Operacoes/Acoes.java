@@ -16,8 +16,8 @@ public class Acoes {
         this.setResultado(Math.multiplyExact(n1, n2));
         return this.getResultado();
     }
-    public double divisao(double n1, double n2) {
-        this.setResultado(Math.floorDiv((int)n1, (int)n2));
+    public double divisao(long n1, long n2) {
+        this.setResultado(Math.floorDiv(n1, n2));
         return this.getResultado();
     }
     public int raizq(int n1) {

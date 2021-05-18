@@ -5,7 +5,7 @@ import Operacoes.Acoes;
 public class Calculadora {
 
     public static void main(String[] args) {
-        int resultado = 0;
+        double resultado = 0;
         Acoes op = new Acoes();
         Object[] operacoes = {"Soma", "Subtração", "Multiplicação", "Divisão", "Raizq", "Potenciação"};
         Object selectedValue = JOptionPane.showInputDialog(null, "Escolha uma operação", "Opções", JOptionPane.INFORMATION_MESSAGE, null, operacoes, operacoes[0]);
@@ -28,7 +28,7 @@ public class Calculadora {
 		else if (selectedValue == operacoes[3]){
 			String num00 =  JOptionPane.showInputDialog(null,"Digite um número");
         	String num01 =  JOptionPane.showInputDialog(null,"Digite outro número");
-    		resultado = (int) op.divisao(Integer.parseInt(num00), Integer.parseInt(num01));
+    		resultado = (double) op.divisao(Long.parseLong(num00), Long.parseLong(num01));
 		}
         else if (selectedValue == operacoes[4]){
         	String num00 =  JOptionPane.showInputDialog(null,"Digite um número");
@@ -42,6 +42,5 @@ public class Calculadora {
         
         JOptionPane.showMessageDialog(null, "O resultado é: " + resultado, "Resultado", JOptionPane.CLOSED_OPTION);
         
-    }
-    
+    } 
 }
