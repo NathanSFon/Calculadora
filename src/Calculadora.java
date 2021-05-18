@@ -7,7 +7,7 @@ public class Calculadora {
     public static void main(String[] args) {
         int resultado = 0;
         Acoes op = new Acoes();
-        Object[] operacoes = {"Soma", "Subtração", "Multiplicação", "Divisão"};
+        Object[] operacoes = {"Soma", "Subtração", "Multiplicação", "Divisão", "Raizq", "Potenciação"};
         Object selectedValue = JOptionPane.showInputDialog(null, "Escolha uma operação", "Opções", JOptionPane.INFORMATION_MESSAGE, null, operacoes, operacoes[0]);
 
         if(selectedValue == operacoes[0]) {
